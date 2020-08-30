@@ -1,5 +1,5 @@
-<% provide :title, "Sign up" %>
-<h1>Sign up</h1>
+<% provide :title, t(".title") %>
+<h1><%= t".title" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -8,7 +8,7 @@
       <% if @user.errors.any? %>
         <div id="error_explanation">
           <div class="alert alert-danger">
-            <%= t "the_form_contains" %>
+            <%= t ".the_form_contains" %>
             <%= pluralize @user.errors.count, "error" %>.
           </div>
           <ul>
@@ -25,9 +25,9 @@
       <%= f.email_field :email %>
       <%= f.label :password %>
       <%= f.password_field :password %>
-      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.label :password_confirmation, t(".confirmation") %>
       <%= f.password_field :password_confirmation %>
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <%= f.submit t(".create_acc"), class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
