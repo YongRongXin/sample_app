@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:danger] = "User not found!"
+    flash[:danger] = t "controllers.users.user_not_found"
     redirect_to root_path
   end
 
@@ -15,10 +15,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       log_in @user
-      flash[:success] = "Welcome to the sample app!"
+      flash[:success] = t "controllers.users.welcome"
       redirect_to @user
     else
-      flash[:danger] = "Account registration failed"
+      flash[:danger] = t "controllers.users.acc_reg_fail"
       render :new
     end
   end

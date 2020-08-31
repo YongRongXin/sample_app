@@ -31,6 +31,50 @@
 
 en:
   hello: "Hello world"
-  help_page: "Rails Tutorial help page"
-  book_page: "Ruby on Rails tutorial Bookrails"
-  invalid: "Invalid email/password combination"
+  
+  controllers:
+    sessions:
+      invalid_email_password: "Invalid email/password combination"
+    users:
+      user_not_found: "User not found!"
+      welcome: "Welcome to the Sample App!"
+      acc_reg_fail: "Account registration failed"
+
+  helpers:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+
+  layouts:
+    header:
+      sample_app: "Sample App"
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log Out"
+      login: "Log In"
+  
+  sessions:
+    new:
+      login: "Log In"
+      remember_me: "Remember me on this device"
+      new_user: "New user? "
+      sign_up_now: "Sign up now!"
+  
+  static_pages:
+    help:
+      title: "Help"
+      header: "Help"
+    home:
+      title: "Home"
+      header: "StaticPages#Home"
+  
+  users:
+    new:
+      title: "Sign Up"
+      header: "Sign Up"
+      the_form_contains: "The form contains "
+      confirmation: "Confirmation"
+      create_acc: "Create my Account"
