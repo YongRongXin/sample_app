@@ -10,7 +10,8 @@ class User < ApplicationRecord
     uniqueness: true
 
   validates :password, presence: true, 
-    length: { minimum: Settings.validations.password.min_length }
+    length: { minimum: Settings.validations.password.min_length },
+    allow_nil: true
 
   has_secure_password
 
@@ -39,7 +40,7 @@ class User < ApplicationRecord
 
   def authenticated? remember_token
     return false if remember_digest.nil?
-    BCrypt::Password.new remember_digest .is_password? remember_token
+    BCrypt::Password.new(remember_digest).is_password? remember_token
   end
 
   def forget

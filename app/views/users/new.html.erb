@@ -1,4 +1,5 @@
 <% provide :title, t(".title") %>
+<% provide :button_text, t(".create_acc")%>
 <h1><%= t".title" %></h1>
 
 <div class="row">
@@ -19,6 +20,7 @@
         </div>
       <% end %>
 
+      <%= render "shared/error_messages" %>
       <%= f.label :name %>
       <%= f.text_field :name %>
       <%= f.label :email %>
