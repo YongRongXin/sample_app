@@ -33,8 +33,12 @@ en:
   hello: "Hello world"
   
   controllers:
+    acc_activation:
+      acc_activated: "Account activated!"
+      invalid_link: "Invalid activation link"
     sessions:
       invalid_email_password: "Invalid email/password combination"
+      acc_not_activated: "Account not activated. Check your email for the activation link."
     users:
       user_not_found: "User not found!"
       welcome: "Welcome to the Sample App!"
@@ -43,7 +47,11 @@ en:
       update_fail: "Update Failed"
       please_login: "Please Login"
       delete_success: "You have deleted it successfully"
+      please_check_activate: "Please check your email to activate your account."
 
+  mailers:
+    user:
+      subject: "Account Activation"
 
   helpers:
     application:
@@ -60,6 +68,15 @@ en:
       settings: "Settings"
       logout: "Log Out"
       login: "Log In"
+
+  user_mailer:
+    acc_activation_html:
+      header: "Sample App"
+      hi: "Hi"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    acc_activation_text:
+      hi: "Hi"
+      content: "welcome to the Sample App! Click on the link below to activate your account:"
   
   sessions:
     new:
