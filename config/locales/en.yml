@@ -39,6 +39,11 @@ en:
       user_not_found: "User not found!"
       welcome: "Welcome to the Sample App!"
       acc_reg_fail: "Account registration failed"
+      update_success: "Your Update is Successful"
+      update_fail: "Update Failed"
+      please_login: "Please Login"
+      delete_success: "You have deleted it successfully"
+
 
   helpers:
     application:
@@ -78,3 +83,12 @@ en:
       the_form_contains: "The form contains "
       confirmation: "Confirmation"
       create_acc: "Create my Account"
+    edit:
+      title: "Edit User"
+      save_changes: "Save Changes"
+      change: "change"
+    index:
+      title: "All Users"
+      header: "All Users"
+    user:
+      confirm: "Are you sure you want to delete this?"

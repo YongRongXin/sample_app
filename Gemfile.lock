@@ -65,6 +65,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
+    bootstrap-kaminari-views (0.0.5)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -125,6 +128,8 @@ GEM
       dry-schema (~> 1.5)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.13.0)
+      i18n (>= 1.6, < 2)
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -133,6 +138,18 @@ GEM
     jaro_winkler (1.5.4)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -267,11 +284,14 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.13)
   bootsnap (>= 1.4.2)
+  bootstrap-kaminari-views
   bootstrap-sass (~> 3.4.1)
   byebug
   capybara (>= 2.15)
   config
+  faker
   jbuilder (~> 2.7)
+  kaminari
   listen (~> 3.2)
   mysql2 (>= 0.5.3)
   puma (~> 4.1)
