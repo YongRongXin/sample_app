@@ -1,0 +1,4 @@
+<%= t "user_mailer.acc_activation_text.hi" %> <%= @user.name %>,
+
+<%= t "user_mailer.acc_activation_text.content" %>
+<%= edit_account_activation_url @user.activation_token, email: @user.email %>
