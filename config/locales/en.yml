@@ -36,6 +36,10 @@ en:
     acc_activation:
       acc_activated: "Account activated!"
       invalid_link: "Invalid activation link"
+    password_resets:
+      email_sent: "Email was sent with password reset instructions"
+      email_not_found: "Email address not found"
+      reset_success: "Password was reset successfully"
     sessions:
       invalid_email_password: "Invalid email/password combination"
       acc_not_activated: "Account not activated. Check your email for the activation link."
@@ -51,7 +55,8 @@ en:
 
   mailers:
     user:
-      subject: "Account Activation"
+      acc_activation: "Account Activation"
+      password_reset: "Password Reset"
 
   helpers:
     application:
@@ -76,8 +81,27 @@ en:
       content: "Welcome to the Sample App! Click on the link below to activate your account:"
     acc_activation_text:
       hi: "Hi"
-      content: "welcome to the Sample App! Click on the link below to activate your account:"
+      content: "welcome to the Sample App! Click on the link below to activate your account:"    
+    password_reset_html:
+      header: "Password Reset"
+      click_link_below: "To reset your password, please click the link below"
+      expire_in: "This link will expire in two hours"
+      ignore_if_no_request: "If you do not request to reset your password, please ignore this email"    
+    password_reset_text:
+      click_link_below: "To reset your password, please click the link below"
+      expire_in: "This link will expire in two hours"
+      ignore_if_no_request: "If you do not request to reset your password, please ignore this email"
   
+  password_resets:
+    edit:
+      title: "Reset Password"
+      header: "Reset Password"
+      update_password: "Update Password"
+    new:
+      title: "Forgot Password"
+      header: "Forgot Password"
+      submit: "Submit"
+
   sessions:
     new:
       login: "Log In"
@@ -94,6 +118,9 @@ en:
       header: "StaticPages#Home"
   
   users:
+    form:
+      confirmation: "Confirmation"
+      forgot_password: "(forgot password)"
     new:
       title: "Sign Up"
       header: "Sign Up"
