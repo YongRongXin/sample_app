@@ -125,6 +125,9 @@ en:
       the_form_contains: "The form contains"
     micropost_form:
       post: "Post"
+    stat:
+      following: "Following"
+      followers: "Followers"
   
   static_pages:
     help:
