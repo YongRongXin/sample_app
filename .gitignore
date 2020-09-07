@@ -42,3 +42,6 @@ yarn-debug.log*
 /config/database.yml
 /config/credentials.yml.enc
 /test
+
+# Ignore uploaded test image
+/storage

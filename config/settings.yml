@@ -18,3 +18,7 @@ per_page: 10
 signup:
   gravatar:
     email: "https://gravatar.com/emails"
+
+image_size:
+  height: 500
+  width: 500
