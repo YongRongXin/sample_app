@@ -36,6 +36,9 @@ en:
     acc_activation:
       acc_activated: "Account activated!"
       invalid_link: "Invalid activation link"
+    microposts:
+      micropost_created: "Micropost activated"
+      micropost_deleted: "Micropost deleted"
     password_resets:
       email_sent: "Email was sent with password reset instructions"
       email_not_found: "Email address not found"
@@ -49,9 +52,10 @@ en:
       acc_reg_fail: "Account registration failed"
       update_success: "Your Update is Successful"
       update_fail: "Update Failed"
-      please_login: "Please Login"
       delete_success: "You have deleted it successfully"
       please_check_activate: "Please check your email to activate your account."
+    application:
+      please_login: "Please Login"
 
   mailers:
     user:
@@ -92,6 +96,13 @@ en:
       expire_in: "This link will expire in two hours"
       ignore_if_no_request: "If you do not request to reset your password, please ignore this email"
   
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "Delete"
+      confirm: "Are you sure you want to delete it?"
+
   password_resets:
     edit:
       title: "Reset Password"
@@ -108,6 +119,12 @@ en:
       remember_me: "Remember me on this device"
       new_user: "New user? "
       sign_up_now: "Sign up now!"
+
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+    micropost_form:
+      post: "Post"
   
   static_pages:
     help:
@@ -116,6 +133,7 @@ en:
     home:
       title: "Home"
       header: "StaticPages#Home"
+      micropost_feed: "Micropost Feed"
   
   users:
     form:
@@ -136,3 +154,5 @@ en:
       header: "All Users"
     user:
       confirm: "Are you sure you want to delete this?"
+    show:
+      microposts: "Microposts"

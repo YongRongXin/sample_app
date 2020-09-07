@@ -8,7 +8,9 @@ class UsersController < ApplicationController
                  .page(params[:page]).per Settings.per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page params[:page]
+  end
 
   def new
     @user = User.new
@@ -47,14 +49,6 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "controllers.users.please_login"
-    redirect_to login_url
   end
 
   def correct_user

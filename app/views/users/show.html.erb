@@ -7,5 +7,14 @@
         <%= @user.name %>
       </h1>
     </section>
-  </aside>
+  </aside>  
+  <div class="col-md-8">
+    <% if @user.microposts.any? %>
+      <h3><%= t ".microposts" %> (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%= paginate @microposts %>
+    <% end %>
+  </div>
 </div>
